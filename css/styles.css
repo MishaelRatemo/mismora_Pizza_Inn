@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Russo+One&display=swap');
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+header{
+    position: relative;
+}
+
+#overlay{
+    /* display: ; */
+    align-items: center;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+}
+#overlay h1{
+    font-family: russo-one;
+}
+
+#overlay .btn a{
+    text-decoration: none;
+    color: white;
+}
+#home{
+    position: relative;
+    height: 100vh;
+    background: black;
+    background-image: url(../img/bg-texture-wood4\ 1.png);
+}
+#greens{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+#greens1{
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+#tomatoes{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+}
+#greens-bean{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#pizza{
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+}
