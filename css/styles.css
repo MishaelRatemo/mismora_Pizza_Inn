@@ -42,8 +42,8 @@ header{
 }
 #tomatoes{
     position: absolute;
-    top: 40%;
-    right: 10%;
+    top: 45%;
+    right: 0;
 }
 #greens-bean{
     position: absolute;
@@ -69,7 +69,7 @@ header{
     margin: auto;
     /* width: 60%; */
 }
-.circle img{
+.circle >img{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -80,26 +80,26 @@ header{
 
 
 .circle img:first-child {
-    transform: rotate(-98deg) translateY(-54vh);
+    transform: rotate(274deg) translateY(-52vh);
 }
 .circle img:nth-child(2) {
-    transform: rotate(-77.5deg) translateY(-47vh);
+    transform: rotate(294deg) translateY(-47vh);
 }
 
 .circle img:nth-child(3) {
-    transform: rotate(-53deg) translateY(-46vh);
+    transform: rotate(317deg) translateY(-46vh);
 }
 .circle img:nth-child(4) {
-    transform: rotate(-30.5deg) translateY(-40vh);
+    transform: rotate(348deg) translateY(-38vh);
 }
 .circle img:nth-child(5) {
-    transform: rotate(8deg) translateY(-31vh);
+    transform: rotate(31deg) translateY(-31vh);
 }
 .circle img:nth-child(6) {
-    transform: rotate(35.5deg) translateY(-28vh);
+    transform: rotate(53deg) translateY(-22vh);
 }
 .circle img:nth-child(7) {
-    transform: rotate(75deg) translateY(-34vh);
+    transform: rotate(89deg) translateY(-25vh);
 }
 .circle img:nth-child(8) {
     transform: rotate(108deg) translateY(-54vh);
