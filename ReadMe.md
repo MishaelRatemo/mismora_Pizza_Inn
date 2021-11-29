@@ -18,7 +18,7 @@ As a customer can;
 7. If I want my pizza to be delivered, I want to be prompted to enter where the delivery should be made and an alert saying '' your order will be delivered to your location"
 8. See a checkout button that when clicked shows the total amount charged for the orders.
  ## Live Demo page
- click [here]()
+ click [here](https://mismora-pizza-inn.netlify.app/)
 
 
  ## Technologies Used
