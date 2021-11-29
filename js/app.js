@@ -2,18 +2,19 @@ $(document).ready(function(){
     $('input#Yes').click(function () {     
         var location = prompt("Enter Your Location ");
             console.log(location);
-            alert(`Delivery will be done at ${location}. Thank you for being our Customer`);   
-            $('#last').append(`<h4> Delivery will be at ${location} </h4>`);           
+            alert(`Delivery will be done at ${location}.Delivery cost $3.5 Thank you for being our Customer`);   
+            $('#last').append(`<h5> Delivery will be at ${location}.Cost $3.5 </h5>`);           
     });    
 });
 var pricePizza;
 class Pizza{
-    constructor(markedPrice,number,Crust,topping){
+    constructor(markedPrice,number,Crust,topping,delivery ){
         this.initialCost =markedPrice;
         this.numOfPizza = number;
         this.Crust = Crust;
         this.toppings = topping;
-        this.totals = this.initialCost *number + parseInt(this.Crust) + topping ;
+        this.delivery = delivery;
+        this.totals = this.initialCost *number + parseInt(this.Crust) + topping + parseFloat(delivery) ;
     }
 }
 $(document).ready(function(){
@@ -32,13 +33,17 @@ $(document).ready(function(){
         var tops= $('.toppings:checked').map(function(){
             return this.value;
         }).get(); 
-        alert(tops);
+
+        // alert(tops);
+        
         var sumtopping =0;
         for (var i=0; i <tops.length; i++){
             sumtopping += parseFloat( tops[i]);
         }
+        let deliveryCost = $("#Yes").val();
+
         console.log("sum toppings"+sumtopping);
-        pricePizza =new Pizza(price,numberOfPizza,crust,sumtopping);
+        pricePizza =new Pizza(price,numberOfPizza,crust,sumtopping,deliveryCost);
         console.log(pricePizza);
         updateCosts();
 
