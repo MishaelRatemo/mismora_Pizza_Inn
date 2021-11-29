@@ -43,8 +43,7 @@ $(document).ready(function(){
         updateCosts();
 
         $(this)[0].reset();
-    });
-      
+    });      
 });
 function updateCosts(){
     $('#subtotals').text(pricePizza.totals);
