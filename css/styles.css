@@ -77,6 +77,15 @@ header{
 #Order-btn{
     z-index: 10;
 }
+#pizza{
+     
+        margin: auto;
+        position: absolute;
+        width: 50%;
+        left: 100%;
+        bottom: 1%;
+    }
+
 
 
 .circle img:first-child {
