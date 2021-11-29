@@ -25,7 +25,7 @@
             <img src="img/tomatoes.png" class="img-fluid" id="tomatoes" alt="tomatoes image">
             <img src="img/green-beans.png" class="img-fluid" id="greens-bean" alt="veges image">
 
-            <nav class="navbar navbar-expand-lg navbar-dark w-75 bg-dark justify-content-center">
+            <nav class="navbar navbar-expand-lg navbar-dark w-75 bg-dark justify-content-center sticky-top">
                 <div class="container-fluid">
                   <a class="navbar-brand" >Mismora PI</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,22 +38,223 @@
                           <a class="nav-link text-white display-6" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-white display-6" href="#">About Us</a>
+                          <a class="nav-link text-white display-6" href="#about">About Us</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-white display-6">Contact Us</a>
+                          <a class="nav-link text-white display-6" href="#contact">Contact Us</a>
                         </li>
                       </ul>
                   </div>
                 </div>
-              </nav>
-              <img src="img/pizza.png" class="img-fluid" id="pizza" alt="veges image">
+            </nav>
+            <div id="menu">
+               
+                <div class="circle">
+                  <!-- <p>Bacon</p> -->
+                  <img src="img/toppings/bacon .png" alt="">
+                  
+               
+                  <img src="img/toppings/beef.png" alt="">
+                  <!-- <p>Bacon</p> -->
+               
+                  <img src="img/toppings/cheesetoppings.png" alt="">
+                  <!-- <p>Bacon</p> -->
+                
+                  <img src="img/toppings/chicken.png" alt="">
+                  <!-- <p>Bacon</p> -->
+               
+                  <img src="img/toppings/olives.png" alt="">
+                  <!-- <p>Bacon</p> -->
+                
+                  <img src="img/toppings/pepperoni.png" alt="">
+                  <!-- <p>Bacon</p> -->
+                
+                  <img src="img/toppings/sausage.png" alt="">
+                  <!-- <p>Bacon</p> -->
 
+                  <article>
+                    <img src="img/pizzaa.png" class="img-fluid" id="pizza" alt="veges image">
+                  </article> -->
+                </div>
+                
+                
+              </div>
+
+
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#checkOut">
+                Make Order
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="checkOut" data-bs-backdrop="static" tabindex="-1" aria-labelledby="pizzaUserCheckout" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header bg-dark text-center text-warning">
+                      <h5 class="modal-title" id="pizzaUserCheckout"><h1>Ordering</h1></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="order_info">
+                          <h3>Select Size</h3>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="PizzaSize" id="Large" value="12">
+                            <label class="form-check-label" for="Large">
+                              Large @ $12
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="PizzaSize" id="Medium" value="9">
+                            <label class="form-check-label" for="Medium">
+                              Medium @ $9
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="PizzaSize" id="Small" value="7" >
+                            <label class="form-check-label" for="Small">
+                              Small @ $7
+                            </label>
+                          </div>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" >Number</span>
+                            <input type="number" class="form-control" id="noOfPiza" min="1" placeholder="0" aria-label="Number" aria-describedby="noOfPizza">
+                          </div>
+
+                          <h3>Choose your Crust</h3>
+                          <select id="Crust" class="form-select" aria-label=" select">
+                            <option >---Select Crust---</option>
+                            <option value="2">Stuffed Crust @ $2</option>
+                            <option value="3">Gluten-free Crust @ $3</option>
+                            <option value="1.6">Flat Bread Crust @ $1.6</option>
+                            <option value="1.8">Crispy Crust @ $1.8</option>
+                            <option value="2.9">Cheese Crust @ $2.9</option>
+                            <option value="4.1">Neapolitan Crust @ $4.1</option>                            
+                          </select>
+
+                          <h3>Choose Your toppings</h3>
+                          <div class="topping row d-flex flex-wrap ">
+                              <div class="form-check">
+                                <input class="form-check-input toppings" type="checkbox" value="2.8"  id="Bacon">
+                                <label class="form-check-label" for="Bacon">
+                                  Bacon @ $ 2.8
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input toppings" type="checkbox" value="2.7" id="Beef" >
+                                <label class="form-check-label" for="Beef">
+                                  Beef @ $ 2.7
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input toppings" type="checkbox" value="3.2" id="Chicken">
+                                <label class="form-check-label" for="Chicken">
+                                  Chicken @ $ 3.2
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input toppings" type="checkbox" value="2" id="Cheese" >
+                                <label class="form-check-label" for="Cheese">
+                                  Cheese @ $ 2
+                                </label>
+                              </div>  
+                              <div class="form-check">
+                                <input class="form-check-input toppings" type="checkbox" value="2.5" id="Olives" >
+                                <label class="form-check-label" for="Olives">
+                                  Olives @ $ 2.5
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input toppings" type="checkbox" value="1.4" id="Pepperoni" >
+                                <label class="form-check-label" for="Pepperoni">
+                                  Pepperoni @ $ 1.4
+                                </label>
+                              </div> 
+                              <div class="form-check">
+                                <input class="form-check-input toppings" type="checkbox" value="1.8" id="Sausage" >
+                                <label class="form-check-label" for="Sausage">
+                                  Sausage @ $ 1.8
+                                </label>
+                              </div> 
+                              <div class="form-check">
+                                <input class="form-check-input toppings" type="checkbox" value="0.8" id="Peppers" >
+                                <label class="form-check-label" for="Peppers">
+                                  Peppers @ $ 0.8
+                                </label>
+                              </div>                              
+                            </div>
+                            <h3>Want delivery?</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Delivery" id="No" >
+                                <label class="form-check-label" for="No">
+                                  No
+                                </label>
+                            </div>
+                            <div class="form-check" id="last">
+                                <input class="form-check-input" type="radio" name="Delivery"  id="Yes" >
+                                <label class="form-check-label" for="Yes">
+                                  Yes
+                                </label>                              
+                            </div>
+                            <div class="subtotals">
+                              <p>Your subtotals are $ <span id="subtotals"></span></p>
+                            </div>
+                            
+                      </form>
+                    </div>
+                    <div class="modal-footer bg-dark">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      <button type="submit" form="order_info" class="btn btn-success" data-bs-toggle="modal">Checkout</button>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-        <div id="about"></div>
-        <div id="contact"></div>
+
+        <div id="about"> 
+          <div class="d-flex ">
+            <section class="w-50">
+              <img src="img/pizza-about.png" class="img-fluid" alt="pizza image">
+            </section>
+            <article class="w-50">
+              <h1>About US</h1>
+              <p>A Pizza Inn pizza box might be one of the most recognizable icons of Africa. Whichever 
+                way you slice it, Pizza Inn is an industry leader in the quick service pizza game. The 
+                first Pizza Inn outlet opened its doors in 1994 in Harare, Zimbabwe, and rose quickly in 
+                popularity. Serving hot oven-fresh pizza with its signature all-natural tomato sauce and
+                using only the freshest ingredients, Pizza Inn has established itself at the top of the 
+                industry and is easily one of the first choices in quick service pizza in Africa.
+              </p>
+              <p>The homemade pizza dough is produced in-house
+                daily and is another reason why the pizza at Pizza Inn always tastes better. The Twisty Bread, the 
+                signature Wingz and the delicious Double Meal are additional value-for-money options that keep our 
+                satisfied customers coming back time after time. These are the meals that have made our Terri?c Tuesday
+                everyone’s favourite day of the week. When entertaining, a Hawaiian, a Regina, or a Peri Peri Chicken pizza 
+                from Pizza Inn is the obvious and perfect option to please crowds of all ages.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div id="contact">
+          <footer class=" d-flex flex-wrap justify-content-between ">
+            <div>
+              1
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi labore blanditiis architecto quidem ullam cumque atque? Aliquam cum doloribus esse optio sint corporis vel, quis consectetur laudantium iusto at recusandae!
+
+            </div>
+            <div>
+              2
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio soluta, fugit inventore accusantium ipsa quidem cum, sint, odio exercitationem molestiae minus excepturi hic architecto accusamus nesciunt doloribus est itaque.
+            </div>
+            <div>
+              3
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis accusantium quisquam sit cupiditate! Vero et iusto fugiat harum odit. Corrupti obcaecati voluptates, eveniet illo molestiae quasi necessitatibus laudantium vitae iusto.
+            </div>
+          </footer>
+        </div>
     </main>
     <script src="js/jQuery v3.6.o.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <script src="/js/app.js"></script>
 </body>
 </html>
