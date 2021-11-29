@@ -49,7 +49,6 @@ $(document).ready(function(){
 function updateCosts(){
     $('#subtotals').text(pricePizza.totals);
 }
-
   //Function that adds the total up
   function sumUp() {
     var sum = 0;
