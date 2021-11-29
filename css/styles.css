@@ -99,6 +99,10 @@ header{
 .circle img:nth-child(8) {
     transform: rotate(108deg) translateY(-54vh);
 }
+.circle article{
+    width: 50%;
+    margin: auto;
+}
 
 
 .modal-dialog{
