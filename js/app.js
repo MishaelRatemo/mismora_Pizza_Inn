@@ -23,18 +23,26 @@ $(document).ready(function(){
         let price = $("input[name='PizzaSize']:checked").val();
         let numberOfPizza = $("input#noOfPiza").val();
         let crust = $("#Crust").val();
-        console.log(` Crust selecte ${crust}`)
+        console.log(` Crust selected ${crust}`)
         console.log(`Marked Price $ ${price}`); console.log(`No of Pizz ${numberOfPizza}`) ;
         var totalCost = price* numberOfPizza;
         console.log(`Totals $ ${totalCost}.`)        
         
         var top = $('#Bacon:checked').val(); 
-        
+        //
         var tops= $('.toppings:checked').map(function(){
             return this.value;
         }).get(); 
 
-        // alert(tops);
+        // get text of selected elements
+        console.log( "this crust"+
+            $("#Crust option:selected").text()
+        )
+        console.log(
+                 $(".toppings:checked").parent().text()
+        )
+
+        
         
         var sumtopping =0;
         for (var i=0; i <tops.length; i++){
@@ -42,11 +50,11 @@ $(document).ready(function(){
         }
         let deliveryCost = $("#Yes").val();
 
-        console.log("sum toppings"+sumtopping);
+        // console.log("sum toppings"+sumtopping);
         pricePizza =new Pizza(price,numberOfPizza,crust,sumtopping,deliveryCost);
-        console.log(pricePizza);
+        // console.log(pricePizza);
         updateCosts();
-
+        // reset form after submit
         $(this)[0].reset();
     });      
 });
